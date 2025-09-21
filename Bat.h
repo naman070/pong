@@ -16,7 +16,7 @@ class Bat {
             m_Position.x = startX;
             m_Position.y = startY;
 
-            m_Shape.setSize({50, 5});
+            m_Shape.setSize({100, 5});
             m_Shape.setPosition(m_Position);
         }
 
