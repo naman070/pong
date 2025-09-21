@@ -25,6 +25,7 @@ class Ball{
         void resetPosition(float startX, float startY){
             m_Position.x = startX;
             m_Position.y = startY;
+            m_Speed = 900.0f;
             m_Shape.setPosition({startX, startY});
         }
 
@@ -49,6 +50,7 @@ class Ball{
         }
 
         void reboundBatOrTop(){
+            m_Speed = min(m_Speed * 1.1f, 1500.0f);
             m_DirectionY = -m_DirectionY;
         }
 
